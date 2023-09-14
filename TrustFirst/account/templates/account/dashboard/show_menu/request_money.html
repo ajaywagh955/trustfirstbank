@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Money</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="{% static 'account/dashboard/show_menu/css/send_money.css'%}">
+
+</head>
+
+<body>
+    <header>
+        <a href="{% url 'dashboard' %}" style="text-decoration: none;color:#fff">
+            <i style="float: left;font-size:40px;margin-top:-5px" class="bi bi-arrow-left"></i></a>
+        <h1>Deposite Money</h1>
+    </header>
+    <main>
+        <form action="#" method="POST">
+            {% csrf_token %}
+            <div class="input-container">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" placeholder="Enter amount" required>
+            </div>
+            {% comment %} <div class="input-container">
+                <label for="sender">Sender:</label>
+                <input type="text" id="sender" name="sender" placeholder="Enter sender's name" required>
+            </div> {% endcomment %}
+
+            {% comment %} <div class="input-container">
+                <label for="account">To Account:</label>
+                <select id="account" name="account" required>
+                    <option value="">Select an account</option>
+                    <option value="account1">Account 1</option>
+                    <option value="account2">Account 2</option>
+                    <option value="account3">Account 3</option>
+                </select>
+            </div> {% endcomment %}
+            {% comment %} <div class="input-container">
+                <label for="notes">Notes:</label>
+                <textarea id="notes" name="notes" placeholder="Enter additional notes" cols="50" rows="5" required></textarea>
+            </div> {% endcomment %}
+            <button type="submit">Deposite Money</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 MyBank. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

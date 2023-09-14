@@ -1,0 +1,154 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+                    initial-scale=1.0">
+    <title>TrustFirst</title>
+    <link rel="stylesheet" href="{% static 'account/dashboard/css/style.css'%}">
+    {% comment %} <link rel="stylesheet" href="responsive.css"> {% endcomment %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- for header part  -->
+    <header style="background-color: rgba(40, 58, 90, 0.9);">
+
+        <div class="logosec">
+            <div class="logo">TrustFirst</div>
+            <i class="bi bi-list icon menuicn " id="menuicn"></i>
+        </div>
+
+        <div class="searchbar">
+            <input type="text" placeholder="Search">
+            <div class="searchbtn">
+                <i class="bi bi-search" style="color: #FFF;"></i>
+            </div>
+        </div>
+
+        <div class="message">
+            <div class="circle"></div>
+            <i class="bi bi-bell-fill icon icon"></i>
+            <div class="dp">
+                <i class="bi bi-person-circle dpicn icon"></i>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="main-container">
+        <div class="navcontainer">
+            <nav class="nav">
+                <div class="nav-upper-options">
+                    <a href="index.html" style="text-decoration: none;color:#FFF">
+                        <div class="nav-option option4">
+                            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png"
+                                class="nav-img" alt="dashboard">
+                            <h3 class="nav-item"> Dashboard</h3>
+                        </div>
+                    </a>
+                    <a href="transfer.html" style="text-decoration: none;color:#fff">
+                        <div class="option2 nav-option">
+                            <i class="bi bi-send nav-img icon"></i>
+                            <h3 class="nav-item">Transfer</h3>
+                        </div>
+                    </a>
+                    <a href="card.html" style="text-decoration: none;color:#fff">
+                        <div class="nav-option option3">
+                            <i class="bi bi-credit-card-2-back icon nav-img"></i>
+                            <h3 class="nav-item">Card</h3>
+                        </div>
+                    </a>
+                    <div class="nav-option option1">
+                        <i class="bi bi-clock-history icon nav-img"></i>
+                        <h3 class="nav-item"> History</h3>
+                    </div>
+                    <a href="profile.html" style="text-decoration: none;color:#fff">
+                        <div class="nav-option option5">
+                            <i class="bi bi-person-circle nav-img icon"></i>
+                            <h3 class="nav-item"> Profile</h3>
+                        </div>
+                    </a>
+                    <a href="logout.html" style="text-decoration: none;color:#fff">
+                    <div class="nav-option logout">
+                        <i class="bi bi-box-arrow-left icon nav-img"></i>
+                        <h3 class="nav-item">Logout</h3>
+                    </div>
+                </a>
+                </div>
+            </nav>
+        </div>
+        <div class="main">
+
+            <div class="searchbar2">
+                <input type="text" name="" id="" placeholder="Search">
+                <div class="searchbtn">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
+                        class="icn srchicn" alt="search-button">
+                </div>
+            </div>
+
+
+            <!-- <h1>Transaction History</h1> -->
+
+
+
+
+
+            <div class="report-container">
+                <div class="report-header">
+                    <h5 class="recent-Articles">Transaction History</h5>
+                </div>
+                <div class="table-container">
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th scope="col">Transaction ID</th>
+                                <th scope="col">Transaction Type</th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">Date & Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for transaction in transactions %}
+                            <tr>
+                                <td>{{ transaction.transaction_id }}</td>
+                                <td>{{ transaction.transaction_type }}</td>
+                                <td>{{ transaction.amount }}</td>
+                                <td>{{ transaction.transaction_time }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</body>
+
+<script>let menuicn = document.querySelector(".menuicn");
+    let nav = document.querySelector(".navcontainer");
+
+    menuicn.addEventListener("click", () => {
+        nav.classList.toggle("navclose");
+    })
+</script>
+
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>TrustFirst Bank - Home</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/account/assets/img/favicon.png" rel="icon">
+  <link href="static/account/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/account/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/account/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/account/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/account/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/account/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/account/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="static/account/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/account/assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body style="background: #cad7fda4;">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">TrustFirst</a></h1>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="{% url 'index' %}">Home</a></li>
+          <li><a class="nav-link scrollto" href="">Services</a></li>
+          <li><a class="nav-link scrollto" href="">About</a></li>
+          <li><a class="nav-link scrollto" href="">Contact</a></li>
+          <li><a class="getstarted scrollto" href="{% url 'login' %}">Login</a></li>
+          <li><a class="getstarted scrollto" href="{% url 'Register' %}">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+          data-aos="fade-up" data-aos-delay="200">
+          <h1>Better Solutions For Your Banking</h1>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="{% url 'Register' %}" class="btn-get-started scrollto">Get Started</a>
+
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="static/account/assets/img/hero-img.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Services</h2>
+        <p>TrustFirst Bank offers a comprehensive range of financial services, including personal banking, wealth
+          management, commercial banking, and specialized financial solutions, all designed to meet your unique needs.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box">
+            <div class="icon"><i class="fa-sharp fa-regular fa-money-bill-1-wave"></i></div>
+            <h4><a href="">Fixed Deposite</a></h4>
+            <p>
+              TrustFirst Bank offers secure and lucrative fixed deposit options for maximizing your savings and
+              achieving your financial goals.</p><br>
+            <div class="">
+              <a href="" class="btn-get-started scrollto">Get Started</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box">
+            <div class="icon"><i class="fa-solid fa-piggy-bank"></i></div>
+            <h4><a href="{% url 'Register' %}">Saving Account</a></h4>
+            <p>TrustFirst Bank's savings accounts provide secure and flexible options to help you grow your savings and
+              achieve your financial goals.</p>
+            <br>
+            <div >
+              <a href="{% url 'Register' %}" class="btn-get-started scrollto">Get Started</a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-tachometer"></i></div>
+            <h4><a href="">Current Acount</a></h4>
+            <p>
+              Manage your daily finances seamlessly with TrustFirst Bank's current account, offering convenient
+              transactions, easy access, and personalized banking solutions.</p>
+            <br>
+            <div>
+              <a href="" class="btn-get-started scrollto">Get Started</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+          <div class="icon-box">
+            <div class="icon"><i class="fa-solid fa-house"></i></div>
+            <h4><a href="">Loans</a></h4>
+            <p>TrustFirst Bank provides flexible and competitive loan options to help you achieve your financial goals
+              with ease and convenience.</p>
+            <br>
+            <div class="d-flex justify-content-center justify-content-lg-start">
+              <a href="" class="btn-get-started scrollto">Get Started</a>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Services Section -->
+
+  <main id="main">
+
+
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              Welcome to TrustFirst Bank, where trust and excellence are at the heart of everything we do. As a leading
+              financial institution, we are committed to providing exceptional banking services and building
+              long-lasting relationships with our clients. At TrustFirst Bank, we prioritize your financial goals and
+              work tirelessly to help you achieve them.
+            </p>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              Experience the TrustFirst Bank difference today. Join our ever-growing family of satisfied customers and
+              let us help you achieve your financial aspirations. Whether you are saving for the future, starting a
+              business, or planning for retirement, we are here to support you every step of the way.
+            </p>
+            <a href="" class="btn-learn-more">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+            <img src="static/account/assets/img/skills.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+            <h3>Interest Percentage</h3>
+            <p class="fst-italic">
+              We offers the minimun loan Interest Percent
+            </p>
+
+            <div class="skills-content">
+
+              <div class="progress">
+                <span class="skill"><i class="fa-solid fa-house" style="margin-right: 5px;"></i>Home Loan <i
+                    class="val">7%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill"><i class="fa-solid fa-person" style="margin-right: 5px;"></i>Personal Loans<i
+                    class="val">14%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill"><i class="fa-solid fa-car" style="margin-right: 5px;"></i>Car Loan<i
+                    class="val">15%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill"><i class="fa-solid fa-user-tie-hair" style="margin-right: 5px;"></i>Small Business
+                  Administration (SBA) <i class="val">20%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Call To Action</h3>
+            <p>
+              Experience the exceptional banking services and trusted expertise of TrustFirst Bank today. Join us and
+              start your journey towards financial success. Contact us now!</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="tel:9356987231">Call Now</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
+                data-bs-target="#faq-list-1">How can I open an account with TrustFirst Bank ?<i
+                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Opening an account with TrustFirst Bank is easy. You can visit our nearest branch or apply online
+                  through our website.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2"
+                class="collapsed">What documents are required to apply for a loan ? <i
+                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  The documentation requirements may vary depending on the type of loan. Generally, you will need proof
+                  of identification, income verification, and collateral details if applicable.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3"
+                class="collapsed">Can I access my accounts online ? <i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Yes, TrustFirst Bank offers secure online banking services, allowing you to access and manage your
+                  accounts conveniently from anywhere, at any time.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4"
+                class="collapsed">How can I reset my online banking password ? <i
+                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  You can easily reset your online banking password by following the "Forgot Password" link on the login
+                  page. Alternatively, you can contact our customer support for assistance.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5"
+                class="collapsed">What are the fees associated with TrustFirst Bank accounts?<i
+                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  The fees may vary depending on the type of account and services you choose. You can refer to our fee
+                  schedule or contact our customer service representatives for detailed information.
+                </p>
+              </div>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="600">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-6"
+                class="collapsed">How can I report a lost or stolen debit/credit card ?<i
+                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-6" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  If your card is lost or stolen, please contact our 24/7 customer service helpline immediately. We will
+                  assist you in blocking the card and arranging a replacement.
+                </p>
+              </div>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="700">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-7"
+                class="collapsed">Is my money insured with TrustFirst Bank ?<i
+                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-7" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Yes, TrustFirst Bank is a member of the Federal Deposit Insurance Corporation (FDIC), which provides
+                  deposit insurance coverage up to the maximum allowed by law.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>For any inquiries or assistance, please contact TrustFirst Bank's dedicated customer support team at
+            [contact number] or email <a href="mailto:contact@trustfirst.com">contact@trustfirst.com</a>.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p><a href="mailto:contact@trustfirst.com">contact@trustfirst.com</a></p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p><a href="tel:9356987231">9356987231</a></p>
+              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.760398395651!2d73.77554287526142!3d19.97657622308402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddebaead9a4d49%3A0xfd6c10f8929d7902!2sSUMAGO%20INFOTECH%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1688734411173!5m2!1sen!2sin"
+                width="600" height="450" style="border:0; width: 100%; height: 290px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>TrustFirst</h3>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong><a href="tel:9356987231"> 9356987231</a><br>
+              <strong>Email:</strong> <a href="mailto:contact@trustfirst.com"></a>contact@trustfirst.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="">Fixed Deposite</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="">Saving Account</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="">Current Acount</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="">Loans</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Follow us on our social handles for the latest updates, financial tips, and exclusive offers:
+              @TrustFirstBank - #TrustFirstBank.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>TrustFirst</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        
+        Designed by <a href="https://ajaywagh.in">@AjayWagh</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/account/assets/vendor/aos/aos.js"></script>
+  <script src="static/account/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/account/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/account/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/account/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/account/assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="static/account/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/account/assets/js/main.js"></script>
+  <script src="https://kit.fontawesome.com/376fef37be.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
